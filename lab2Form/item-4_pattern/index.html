@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>workshop-1</title>
+    <style>
+
+      form{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="form-echo.php" method="get">
+      <ol type="1">
+        <li>
+          <div>
+            <label for="">Username :</label>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              required
+            />
+          </div>
+        </li>
+
+        <br />
+
+        <li>
+          <div>
+            <label for="">ชื่อภาษาไทย</label>
+            <input
+              type="text"
+              name="th-name"
+              placeholder="ชื่อภาษาไทย"
+              pattern="([ก-๏]+|[ก-๏]+\s[ก-๏]+)"
+              required
+            />
+          </div>
+        </li>
+
+        <br />
+        <li>
+          <div>
+            <label for="name">Name</label>
+            <input
+              type="text"
+              pattern="([A-Z]+|[A-Z]+\s[A-Z]+)"
+              placeholder="Name"
+            />
+          </div>
+        </li>
+        <br />
+        <li>
+          <div>
+            <label>สาขาวิชา:</label>
+            <select name="dept">
+              <option value="">--Please choose an option--</option>
+              <option value="CS">CS</option>
+              <option value="IC">IC</option>
+              <option value="MA">MA</option>
+              <option value="IMI">IMI</option>
+              <option value="AS">AS</option>
+              <option value="AFET">AFET</option>
+            </select>
+          </div>
+        </li>
+        <br />
+
+        <li>
+          <div>
+            <label for="">รหัสนักศึกษา</label>
+            <input
+              type="text"
+              name="cs-std"
+              placeholder="xx-xxxxxx-xxxx-x"
+              pattern="\d{2}-\d{6}-\d{4}-\d"
+            />
+          </div>
+        </li>
+        <br />
+
+        <li>
+          <div>
+            <label for="address">Address</label> <br />
+            <input type="text" address" id="" pattern="([\d]+|[\d]+/[\d]+)"/>
+          </div>
+        </li>
+
+        <br />
+
+        <li>
+          <div>
+            <label for="address">Merchandise code</label>
+            <input
+              type="text"
+              required
+              placeholder="code"
+              pattern="[A-Z]{3}[\d]{2}"
+            />
+          </div>
+        </li>
+      </ol>
+      <br />
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
