@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .most-fav-food {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: normal;
+      }
+
+      div {
+        width: 70%;
+        padding-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+
+        display: flex; 
+        align-items: center;
+      }
+
+      label + input {
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <ol type="1">
+        <li>
+          <div>
+            <label for="major">Full name/Abbrevation name of major</label>
+            <input type="text" name="major" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label for="transfer-money">Amount of money to transfer</label>
+            <input type="number" name="transfer-money" />
+          </div>
+        </li>
+
+        <li>
+          <div class="most-fav-food">
+            <label for="top-5-favorite-food"
+              >Top 5 the most favorite food</label
+            >
+            <input type="text" name="first-food" placeholder="number 1" />
+            <input type="text" name="second-food" placeholder="number 2" />
+            <input type="text" name="third-food" placeholder="number 3" />
+            <input type="text" name="fourth-food" placeholder="number 4" />
+            <input type="text" name="fifth-food" placeholder="number 5" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label for="3-months-previous-elec-bills"
+              >3 months electric bill</label
+            >
+            <input type="number" name="3-months-previous-elec-bills" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label for="citizen-id">citizen-id</label>
+            <input type="text" name="citizen-id" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label for="book-satisfaction">book-satisfaction</label>
+            <input type="range" name="book-satisfaction" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label for="symtom">symtom</label>
+            <input type="text" name="symtom" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label>Have you ever vaccinated in previous 3 months?</label>
+            <label for="yes-vaccine">yes</label>
+            <input type="radio" id="yes-vaccine" name="vaccine" value="true" />
+            <label for="no-vaccine">no</label>
+            <input type="radio" id="no-vaccine" name="vaccine" value="false" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label for="password">password</label>
+            <input type="password" name="password" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <label for="class-start">class start</label>
+            <input type="time" name="class-start" />
+            <label for="class-end">class end</label>
+            <input type="time" name="class-end" />
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <p for="doctor-appointment">doctor's appointment</p>
+            <label for="apppointment-date">date</label>
+            <input type="date" name="apppointment-appointment" />
+            <label for="apppointment-date">time</label>
+            <input type="time" name="apppointment-appointment" />
+          </div>
+        </li>
+      </ol>
+    </form>
+  </body>
+</html>

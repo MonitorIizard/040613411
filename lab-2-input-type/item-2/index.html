@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <h1>เเบบฟอร์มจองทัวร์</h1>
+    <div>
+      <form action="">
+        <fieldset>
+          <legend>ข้อมูลทั่วไป</legend>
+          <label for="name">ชื่อ เเละนามสกุล : </label><br />
+          <input
+            type="text"
+            name="name"
+            placeholder="กรอกชื่อ-นามสกุล"
+            required
+          />
+          *
+          <br />
+          <label for="email">Email : </label><br />
+          <input type="email" name="email" /> *
+          <br />
+          <label for="tel">โทรศัพท์ : </label>
+          <input type="tel" value="+66" />
+          <br />
+          <label for="address">ที่อยู่</label><br />
+          <textarea name="" id=""></textarea>
+          <br />
+          <label for="post-code">รหัสไปรษณีย์ : </label>
+          <input type="text" pattern="\d*5" />
+          <br />
+          <label for="pic">รูปผู้จอง : </label>
+          <input type="file" />
+        </fieldset>
+
+        <fieldset>
+          <legend>ข้อมูลเข้าสู่ระบบ</legend>
+
+          <label for="username">Username</label>
+          <br>
+          <input type="text" name="username" pattern="[\w]{8,}" required>
+          <br>
+          <small style="font-style: italic;">ประกอบด้วยตัวเลข ตัวอักษร หรือ _ ตั่งเเต่ 8 ตัวขึ้นไป</small>
+          <br>
+          <br>
+          <label for="Password">Password : </label>
+          <br>
+          <input type="password" name="password" pattern=".{8,}" required>
+          <br>
+          <small style="font-style: italic;">ประกอบด้วยอักษรอะไรก็ได้ 8 ตัวขึ้นไป</small>
+        </fieldset>
+
+        <fieldset>
+          <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+
+          <label for="package">เเพ็คเกจทัวร์ : </label>
+          <select name="package" id="">
+            <option value="th">Thailand</option>
+            <option value="usa">United state of America</option>
+            <option value="vt">Vietnam</option>
+            <option value="cd">Cambodia</option>
+            <option value="col">Columbia</option>
+          </select>
+
+          <br />
+
+          <label for="departure-date">วันที่เดินทาง : </label>
+          <input type="date" />
+
+          <br />
+
+          <label for="pass-num">จำนวนนักเดินทาง : </label>
+          <input type="number" pattern="{1-10} required" />
+
+          <br />
+
+          <label for="fav-trip">เน้นการท่องเที่ยวเเบบใด ?</label> <br />
+          <input type="checkbox" name="shopping" />
+          <label for="shopping">ชอปปิ้ง</label>
+          <br />
+          <input type="checkbox" name="nature" />
+          <label for="nature">ธรรมชาติ</label>
+          <br />
+          <input type="checkbox" name="sea" />
+          <label for="sea">ทะเล</label>
+        </fieldset>
+
+        <label for="consent">ยอมรับเงื่อนไขเเละข้อตกลง</label>
+        <input type="radio" name="consent" value="" checked>
+        <label for="agree">I agree</label>
+        <input type="radio" name="consent">
+        <label for="dis-agree">I disagree</label>
+      
+        <button type="submit">จอง</button>
+      </form>
+    </div>
+  </body>
+</html>
