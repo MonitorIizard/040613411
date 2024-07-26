@@ -52,6 +52,7 @@
               pattern="([A-Z]+|[A-Z]+\s[A-Z]+)"
               name="name"
               placeholder="Name"
+              required
             />
           </div>
         </li>
@@ -59,7 +60,7 @@
         <li>
           <div>
             <label>สาขาวิชา:</label>
-            <select name="dept">
+            <select name="dept" required>
               <option value="">--Please choose an option--</option>
               <option value="CS">CS</option>
               <option value="IC">IC</option>
@@ -80,6 +81,7 @@
               name="cs-std"
               placeholder="xx-xxxxxx-xxxx-x"
               pattern="\d{2}-\d{6}-\d{4}-\d"
+              required
             />
           </div>
         </li>
