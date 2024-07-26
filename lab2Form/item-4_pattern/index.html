@@ -50,6 +50,7 @@
             <input
               type="text"
               pattern="([A-Z]+|[A-Z]+\s[A-Z]+)"
+              name="name"
               placeholder="Name"
             />
           </div>
@@ -87,7 +88,7 @@
         <li>
           <div>
             <label for="address">Address</label> <br />
-            <input type="text" address" id="" pattern="([\d]+|[\d]+/[\d]+)"/>
+            <input type="text" name="address" id="" pattern="([\d]+|[\d]+/[\d]+)"/>
           </div>
         </li>
 
@@ -95,10 +96,11 @@
 
         <li>
           <div>
-            <label for="address">Merchandise code</label>
+            <label for="code">Merchandise code</label>
             <input
               type="text"
               required
+              name="code"
               placeholder="code"
               pattern="[A-Z]{3}[\d]{2}"
             />
