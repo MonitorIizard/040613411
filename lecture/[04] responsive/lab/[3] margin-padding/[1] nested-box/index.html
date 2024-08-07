@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Nested Boxes</title>
+    <style>
+      div#box1 {
+        margin: 40px;
+        padding: 40px;
+        border: 10px solid #000;
+        background-color: green;
+      }
+
+      div#box2 {
+        margin: 40px;
+        padding: 40px;
+        border: 10px dotted black;
+        background-color: red;
+      }
+
+      div#box3 {
+        margin: 40px;
+        padding: 40px;
+        border: 10px dashed black;
+        background-color: yellow;
+      }
+
+      div#box4 {
+        margin: 40px;
+        padding: 40px;
+        border: 10px solid #000;
+        background-color: green;
+      }
+
+      div#box5 {
+        margin: 40px;
+        padding: 40px;
+        border: 10px dotted black;
+        background-color: red;
+      }
+
+      div#box6 {
+        margin: 40px;
+        padding: 40px;
+        border: 10px dashed black;
+        background-color: yellow;
+      }
+
+      .box7 {
+        display: flex;
+      }
+
+      .underline {
+        font-weight: 900;
+        text-decoration: underline;
+      }
+
+      .answer {
+        color : red
+      }
+
+      h1 {
+        text-align: center;
+      }
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 0.9em;
+      }
+      footer a {
+        border: 1px solid #777;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-right: 2px;
+        margin-right: 10px;
+        background-color: #fff;
+      }
+      footer a,
+      footer a:visited {
+        text-decoration: none;
+        color: #00a;
+      }
+      footer a > strong {
+        background-color: #55c;
+        color: #fff;
+        padding: 2px;
+        padding-left: 4px;
+        margin-right: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Nested Boxes</h1>
+
+    <div id="box1">
+      Box 1
+      <div id="box2">
+        Box 2
+        <div id="box3">Box 3</div>
+      </div>
+    </div>
+
+    <div id="box4">
+      Box 1
+      <div class="box7">
+        <div id="box5">Box 2</div>
+        <div id="box6">Box 3</div>
+      </div>
+    </div>
+
+    <div style="margin-left: 40px; font-size: 30px;">
+      <p>
+        <span class="underline">คำถาม</span> *ใช้ ตรวจสอบ *ใช้ Inspector ตรวจสอบ
+        Box Model <br />
+        การกำหนดค่า margin ต่อไปนี้ ต่างกันอย่างไร
+      </p>
+      <ol type="A">
+        <li>margin: 40px; <span class="answer">ตอบ = margin รอบ 40 px</span></li>
+        <li>margin: 40px 20px; <span class="answer"> ตอบ = margin บน ล่าง 40px, margin ซ้ายขวา 20px</span></li>
+        <li>margin: 40px 20px 10px; <span class="answer"> ตอบ = margin ล่าง 10px, margin บน 40px, ซ้าย ขวา 20px </span></li>
+      </ol>
+    </div>
+
+    <footer>
+      <a href="http://validator.w3.org/check/referer">
+        <strong> HTML </strong> Valid!
+      </a>
+      <a href="http://jigsaw.w3.org/css-validator/check/referer?profile=css3">
+        <strong> CSS </strong> Valid!
+      </a>
+    </footer>
+  </body>
+</html>
