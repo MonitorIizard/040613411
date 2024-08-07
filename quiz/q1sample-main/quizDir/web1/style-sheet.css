@@ -1,14 +1,12 @@
+
 body {
-  margin: 50px;
-  background-color: #E6E6FA;
-  text-align: center;
+    margin: 50px;
+    background-color: #E6E6FA;
 }
-
 h1 {
-  text-align: center;
-  color: #8B008B;
+    text-align: center;
+    color: #8B008B;
 }
-
 a, a:visited {
 text-decoration: none;
 }
@@ -16,30 +14,16 @@ text-decoration: none;
     margin: auto;
 }
 
-.nav  a {       
+????? {       
     color: #4B0082;
     background-color: #FFF;
     font-weight: bold;
-    padding: 4px;
-    border : solid black 1px;
-    border-style: dotted;
 }
 
-.nav span {
-    background-color: black;
-    color : yellow;
-    padding: 4px;
-}
-
-.section {
+?????? {
     background-color: #F6F6FA;
     margin-top: 30px;
-    padding: 20px;
-    border: 1px solid black;
-    border-radius: 20px;
-    text-align: left;
 }
-
 .section h2 {
     font-size: 2.2em;
     color: #6A5ACD;
@@ -66,8 +50,3 @@ a > strong {
     padding-left: 4px;
     margin-right: 2px;
 }
-
-.nav > a:hover {
-    background-color: green;
-}
-
