@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'typewriter';
+  src: url('fonts/momt___-webfont.woff2') format('woff2'),
+       url('fonts/momt___-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'handwriting';
+  src: url('fonts/journal-webfont.woff2') format('woff2'),
+       url('fonts/journal-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font: 1.3rem sans-serif;
+  padding: 0.5em;
+  margin : 0;
+  background :black;
+}
+
+form {
+  position: relative;
+  width: 740px;
+  height: 498px;
+  margin: 0 auto;
+  padding: 1em;
+  box-sizing: border-box;
+  background :  url(background.jpg);
+
+  display: grid; 
+  /* display from left to right */
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr); 
+  /* repeat two col full width */
+  grid-template-rows: 10em 1em 1em 1em;
+}
+
+h1 {
+  font: 1em "typewriter",
+  serif;
+  
+  align-self: end;
+}
+
+#message {
+  grid-row: 1/5;
+  /* grid-row is span but It make row that specify become the first row */
+  /* item 1 span 5 rows */
+}
+
+#from, #reply {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  font: 0.8em "typewriter",
+  sans-serif;
+}
+
+textarea, input {
+  font: 
+  1.4em/1.5em "handwriting",
+  cursive;
+
+  border: none;
+  width: 80%;
+  padding: 0 10px;
+  margin: 0;
+  background: none;
+}
+
+input {
+  font: 0.8em;
+  height: fit-content;
+  margin: 20px;
+}
+
+input:focus,
+textarea:focus {
+  background: rgb(0 0 0 / 10%);
+  border-radius: 5px;
+}
+
+textarea {
+  display: block;
+
+  padding: 10px;
+  margin: 10px 0 0 -10px;
+  width: 100%;
+  height: 90%;
+
+  border-right: 1px solid;
+
+  /* we don't want user to resize the text area so */
+  resize  : none;
+  overflow: auto;
+}
+
+button {
+  padding: 5px;
+  font: bold 0.6em sans-serif;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background: none;
+  cursor: pointer;
+  transform: rotate(-1.5deg);
+}
+
+button:after {
+  content: " >>>";
+}
+
+button:hover,
+button:focus {
+  background: #000;
+  color: #fff;
+}
