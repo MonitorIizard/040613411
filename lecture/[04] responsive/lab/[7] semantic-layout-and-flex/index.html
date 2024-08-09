@@ -1,0 +1,110 @@
+<html>
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <style>
+      .let-know {
+        font-style: italic;
+      }
+
+      .menu {
+        padding: 10px;
+        color: white;
+        background-color: aqua;
+        text-align: center;
+      }
+      .content {
+        background-color: gainsboro;
+        width: auto;
+        background-color: yellow; 
+        display: flex;
+      }
+      
+      .ads {
+        background-color: cornflowerblue;
+        width: 40%;
+      }
+      .flex {
+        display: block;
+      }
+
+      @media only screen and  (max-width: 450px) {
+        .flex {
+          display: block;
+          /* display: none; */
+        }
+        .menu {
+          width: auto;
+          height: fit-content;
+        }
+        .content {
+          width: auto;
+        }
+
+        .ads {
+          display: none;
+        }
+      }
+
+      figcaption {
+        text-align: left;
+        margin: 10px;
+      }
+
+      footer {
+        background-color: aquamarine;
+        padding: 15px;
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+      }
+
+      .text {
+        padding: 10px 20px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <nav class="menu">
+        <a href="" class="let-know" style="text-decoration: none;">Used nav tag</a>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.amazon.com/">Amazon</a>
+        <a href="https://m.se-ed.com/">SE-ED book</a>
+      </nav >
+
+      <article class="content">
+          <section class="text">
+            <header>
+              <h1 class="let-know">Used header tag</h1>
+              <h1>My current book : Laws of human nature</h1>
+            </header>
+            <figure>
+              <img src="./laws-of-human-nature-book.jpg" alt="" style="width: 100%;">
+              <figcaption>fg.1 book cover (figure tag)</figcaption>
+            </figure>
+            <p>This book is like the hand book to understand more about human and their behavior</p>
+          </section>
+
+          <aside class="ads">
+            <p class="let-know">This is aside tag</p>
+            <p>Ad1</p>
+            <p>Ad1</p>
+            <p>Ad1</p>
+          </aside>
+      </article>
+
+      <footer>
+        <p class="let-know">Used footer tag</p>
+        <p>Gmail : mokmaard646@gmail.com</p>
+        <p>Made by : 6504062620159</p>
+      </footer>
+
+    </div>
+  </body>
+</html>
