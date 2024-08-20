@@ -1,0 +1,151 @@
+body {
+  height: 100vh;
+}
+
+@media (max-width: 399.99px) {
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+  }
+  
+  #section {
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #header {
+      background-color: rgb(228, 83, 83);
+      text-align: center;
+      padding: 10px;
+  }
+  
+  .left {
+      background-color: rgb(255, 190, 71);
+      text-align: center;
+      padding: 10px;
+      height: 30%;
+  }
+  
+  .main {
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 10px;
+      height: 900px;
+  }
+  
+  .right {
+      background-color: rgb(187, 245, 102);
+      text-align: center;
+      padding: 10px;
+  }
+  
+  #footer {
+      background-color: rgb(113, 162, 253);
+      text-align: center;
+      padding: 10px;
+  }
+}
+@media (min-width: 400px) and (max-width: 599.99px){
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+  }
+  
+  #header {
+      background-color: rgb(228, 83, 83);
+      text-align: center;
+      padding: 10px;
+  }
+  
+  .main {
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 50px;
+      flex-basis: 100%;
+  }
+
+  #section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
+
+  .left {
+      background-color: rgb(255, 190, 71);
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      flex-direction: column;
+      flex-basis: 50%;
+  }
+  
+  .right {
+      background-color: rgb(187, 245, 102);
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      flex-direction: column;
+      flex-basis: 50%;
+  }
+  
+  #footer {
+      background-color: rgb(113, 162, 253);
+      text-align: center;
+      padding: 10px;
+  }
+}
+@media (min-width: 600px) {
+  body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+  }
+  
+  #header {
+      background-color: rgb(228, 83, 83);
+      text-align: center;
+      padding: 10px;
+  }
+
+  #section {
+      display: flex;
+      flex-wrap: wrap;
+      flex-grow: 1; 
+  }
+
+  .main {
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      flex-direction: row;
+      padding-top: 50px;
+      padding-bottom: 300px;
+      flex-basis: 60%;
+      order: 2;
+  }
+
+  .left {
+      background-color: rgb(255, 190, 71);
+      text-align: center;
+      padding-top: 50px;
+      flex-direction: row;
+      flex-basis: 20%;
+      order: 1;
+  }
+  
+  .right {
+      background-color: rgb(187, 245, 102);
+      text-align: center;
+      padding-top: 50px;
+      flex-direction: row;
+      flex-basis: 20%;
+      order: 3;
+  }
+  
+  #footer {
+      background-color: rgb(113, 162, 253);
+      text-align: center;
+      padding: 10px;
+  }
+}
