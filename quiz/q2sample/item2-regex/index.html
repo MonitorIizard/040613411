@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style> 
+  #student-number:invalid {
+    background-color: red;
+  }
+
+  #student-number {
+    background-color: greenyellow;
+  }
+</style>
+
+<body>
+
+  <form onsubmit="addList(event)">
+    <label for="">Student number</label>
+    <input id="student-number"
+           type="text" 
+           pattern="([6-9]{2}|[0-9]{3,})-[0-9]{6}-[0-9]{4}-[0-9]"
+           value="68-040626-2015-9"
+           name="student-id"/>
+
+    <br>
+
+    <p>ชั้นปี</p>
+    <input type="radio" name="year" id="" value="1" onclick="changeYear(event);"/>
+    <label for="">1</label>
+
+    <br>
+
+    <input type="radio" name="year" id="" value="2" onclick="changeYear(event);"/>
+    <label for="">2</label>
+
+    <br>
+
+    <input type="radio" name="year" id="" value="3" onclick="changeYear(event);"/>
+    <label for="">3</label>
+
+    <br>
+
+    <input type="radio" name="year" id="" value="4" onclick="changeYear(event);"/>
+    <label for="">4</label>
+    <br>
+    <br>
+
+    <button type="submit">submit</button>
+  </form>
+
+  <ol id="list" type="1">
+
+  </ol>
+
+  <script>
+    const studentIdInput = document.getElementById('student-number');
+    const orderList = document.getElementById('list');
+
+    function changeDefaultYear( collegeYear ) {
+      let defaultValue = ["66-", "65-", "64-", "63-"];
+      studentIdInput.setAttribute('value', defaultValue[collegeYear - 1]);
+    }
+
+    function changeYear(e) {
+      const collegeYear = e.target.value;
+
+      changeDefaultYear( collegeYear );
+    }
+
+    function addList(e) {
+      e.preventDefault();
+
+      const list = document.createElement('li');
+      const text = document.createTextNode( studentIdInput.value );
+      list.appendChild(text);
+
+      orderList.appendChild(list);
+    }
+
+  </script>
+</body>
+</html>
