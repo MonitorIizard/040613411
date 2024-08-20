@@ -29,22 +29,22 @@
 
     <p>year</p>
 
-    <input type="radio" name="year" id="" value="66-" onclick="changeYear(event);"/>
+    <input type="radio" name="year" id="" value="66-"/>
     <label for="">1</label>
 
     <br>
 
-    <input type="radio" name="year" id="" value="65-" onclick="changeYear(event);"/>
+    <input type="radio" name="year" id="" value="65-"/>
     <label for="">2</label>
 
     <br>
 
-    <input type="radio" name="year" id="" value="64-" onclick="changeYear(event);"/>
+    <input type="radio" name="year" id="" value="64-"/>
     <label for="">3</label>
 
     <br>
 
-    <input type="radio" name="year" id="" value="63-" onclick="changeYear(event);"/>
+    <input type="radio" name="year" id="" value="63-"/>
     <label for="">4</label>
 
     <br>
@@ -57,22 +57,33 @@
 </body>
 
   <script>
-    const input = document.getElementById("student-number");
-    const list = document.getElementById("list");
+    let inputs;
+    let studentNumberInput;
+    let list;
 
-    function changeYear(event) {
-      input.setAttribute("value", event.target.value);
-    }
+      window.onload = () => {
+        studentNumberInput = document.getElementById('student-number');
+        inputs = document.querySelectorAll('input[type="radio"]');
+        list = document.getElementById("list");
+ 
+        for ( let i = 0; i < inputs.length; i++ ) {
+          const node = inputs[i];
+          node.addEventListener('change', (event)=> {
+            const year = event.target.value;
+            studentNumberInput.value = year;
+          })
+        }
+      }
 
-    function addList(event) {
+    function addList( event ) {
       event.preventDefault();
 
-      const stnumber = input.value;
-      const li = document.createElement('li');
-      const text = document.createTextNode(stnumber);
-      li.appendChild(text);
+      const studentID = studentNumberInput.value;
+      const item = document.createElement('li');
+      const text = document.createTextNode(studentID);
 
-      list.appendChild(li);
+      item.appendChild(text);
+      list.appendChild(item);
     }
   </script>
 </html>
