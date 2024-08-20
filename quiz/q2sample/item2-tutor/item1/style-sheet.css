@@ -2,6 +2,17 @@ body {
   height: 100vh;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+#header, .main, .left, .right, #footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media (max-width: 399.99px) {
   body {
       margin: 0;
@@ -17,6 +28,7 @@ body {
       background-color: rgb(228, 83, 83);
       text-align: center;
       padding: 10px;
+      height: 20vh;
   }
   
   .left {
@@ -24,6 +36,7 @@ body {
       text-align: center;
       padding: 10px;
       height: 30%;
+      height: 20vh;
   }
   
   .main {
@@ -31,18 +44,21 @@ body {
       text-align: center;
       padding: 10px;
       height: 900px;
+      height: 20vh;
   }
   
   .right {
       background-color: rgb(187, 245, 102);
       text-align: center;
       padding: 10px;
+      height: 20vh;
   }
   
   #footer {
       background-color: rgb(113, 162, 253);
       text-align: center;
       padding: 10px;
+      height: 20vh;
   }
 }
 @media (min-width: 400px) and (max-width: 599.99px){
@@ -56,6 +72,7 @@ body {
       background-color: rgb(228, 83, 83);
       text-align: center;
       padding: 10px;
+      height: 20vh;
   }
   
   .main {
@@ -63,6 +80,7 @@ body {
       text-align: center;
       padding: 50px;
       flex-basis: 100%;
+      height: 30vh;
   }
 
   #section {
@@ -78,6 +96,7 @@ body {
       padding-bottom: 50px;
       flex-direction: column;
       flex-basis: 50%;
+      height: 30vh;
   }
   
   .right {
@@ -93,6 +112,7 @@ body {
       background-color: rgb(113, 162, 253);
       text-align: center;
       padding: 10px;
+      height: 20vh;
   }
 }
 @media (min-width: 600px) {
