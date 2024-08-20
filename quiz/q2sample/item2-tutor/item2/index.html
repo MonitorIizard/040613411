@@ -5,11 +5,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
+
+<style> 
+  #student-number:invalid {
+    background-color: red;
+  }
+
+  #student-number {
+    background-color: greenyellow;
+  }
+</style>
+
 <body>
-  <form action="">
+  <form onsubmit="addList(event)">
     <label for="">Student number : </label>
-    <input type="text" 
-           pattern="">
+    <input id="student-number"
+           type="text" 
+           pattern="([6-9]{2}|[0-9]{3,})-[0-9]{6}-[0-9]{4}-[0-9]"
+           value="68-040626-2015-9"
+           required
+           name="student-id"/>
+    <br>
+
+    <p>year</p>
+
+    <input type="radio" name="year" id="" value="66-" onclick="changeYear(event);"/>
+    <label for="">1</label>
+
+    <br>
+
+    <input type="radio" name="year" id="" value="65-" onclick="changeYear(event);"/>
+    <label for="">2</label>
+
+    <br>
+
+    <input type="radio" name="year" id="" value="64-" onclick="changeYear(event);"/>
+    <label for="">3</label>
+
+    <br>
+
+    <input type="radio" name="year" id="" value="63-" onclick="changeYear(event);"/>
+    <label for="">4</label>
+
+    <br>
+
+    <button type="submit"> submit </button>
   </form>
+
+  <ol id="list">  
+  </ol>
 </body>
+
+  <script>
+    const input = document.getElementById("student-number");
+    const list = document.getElementById("list");
+
+    function changeYear(event) {
+      input.setAttribute("value", event.target.value);
+    }
+
+    function addList(event) {
+      event.preventDefault();
+
+      const stnumber = input.value;
+      const li = document.createElement('li');
+      const text = document.createTextNode(stnumber);
+      li.appendChild(text);
+
+      list.appendChild(li);
+    }
+  </script>
 </html>
