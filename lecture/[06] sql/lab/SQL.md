@@ -209,7 +209,3 @@ MariaDB [sec1_8]> SELECT student.std_id, SUM(course.credit)
 +------------+--------------------+
 1 row in set (0.001 sec)
 ```
-
-## Part C :
-
-If I have database on remote location how to get that data and iterate into a `JSON` file.
