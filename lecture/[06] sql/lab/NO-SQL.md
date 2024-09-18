@@ -297,9 +297,3 @@ Atlas atlas-tti3y7-shard-0 [primary] student> db.student.find({province:"'ขอ
 ```
 
 <hr>
-
-### 4. Display subject that have been enroll by student who have id `500100348`.
-
-```bash
-
-```
