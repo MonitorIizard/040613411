@@ -61,8 +61,21 @@
       <label for="email" class="font-bold">email</label>
       <input type="email" name="email"   class="border-2 rounded-md p-1 pl-2" value="<?=$member['email']?>">
     </div>
+    <div class="flex gap-4">
+      <label for="fileToUpload" class="font-bold">
+        Profile Picture :
+      </label>
+      <input type="file" name="fileToUpload" id="fileToUpload"
+             onchange="loadFile(event)">
+    </div>
 
-    
+    <script>
+      var loadFile = function(event) {
+        var output = document.getElementById('output');
+        output.src = URL.createObjectURL(event.target.files[0]);
+      };
+    </script>
+
     <div class="cols-span-2">
       <button type="submit"
               class="bg-blue-200 p-2 rounded-md hover:bg-blue-300 h-fit
