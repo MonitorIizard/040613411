@@ -54,7 +54,7 @@
           <img src="../member_photo/<?=$row["username"]?>.jpg" width="100"/>
          </a>
 
-         <a href="./9-edit/form.php" >
+         <a href="./9-edit/form.php?username=<?php echo $row["username"] ?>" >
           <button class="bg-blue-200 p-2 rounded-md hover:bg-blue-300 w-full">
                 edit
             </button>
