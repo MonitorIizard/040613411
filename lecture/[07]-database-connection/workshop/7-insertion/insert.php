@@ -10,7 +10,7 @@
    $stmt->bindParam(6, $_POST['email']);
   $stmt->execute();
 
-  header("Location: ../index.php");
+  header("Location: ../8-show-detail/show-detail.php?username=".$_POST['username']);
 ?>
 
 <html>
