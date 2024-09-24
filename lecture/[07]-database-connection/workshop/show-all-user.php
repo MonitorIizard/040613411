@@ -6,13 +6,15 @@
     $stmt->bindParam(1, $_GET["pid"]); 
     $stmt->execute(); 
   ?>
-
+ <h1>All lists</h1>
   <?php
 
     while ( $row = $stmt->fetch();) {
       ?>   
     
-    <img src="" alt="">
+      <img src="../member_photo/<?=$row["username"]?>.jpg" alt="">
+      <p><?=$row["name"]?></p>
+      <p><?=$row["email"]?></p>
 
     <?php } ?>
    
