@@ -54,12 +54,11 @@
           <img src="../member_photo/<?=$row["username"]?>.jpg" width="100"/>
          </a>
 
-
-         <button class="bg-blue-200 p-2 rounded-md hover:bg-blue-300">
-            <a href="./9-edit/form.php">
-              edit
-            </a>
-          </button>
+         <a href="./9-edit/form.php" >
+          <button class="bg-blue-200 p-2 rounded-md hover:bg-blue-300 w-full">
+                edit
+            </button>
+          </a>
           <button class="bg-red-200 p-2 rounded-md hover:bg-red-300"
             onClick="confirmDelete('<?php echo $row["username"] ?>')">
               delete
