@@ -3,10 +3,10 @@
 <?php
   $stmt = $pdo->prepare("UPDATE member 
                          SET 
-                         password=?
-                         name=?
-                         address=?
-                         mobile=?
+                         password=?,
+                         name=?,
+                         address=?,
+                         mobile=?,
                          email=?
                          WHERE username=?");
   $stmt->bindParam(6, $_POST['username']);
