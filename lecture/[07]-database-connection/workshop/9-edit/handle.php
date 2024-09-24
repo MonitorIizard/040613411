@@ -17,7 +17,7 @@
   $stmt->bindParam(5, $_POST['email']);
 
   if($stmt->execute()){
-    echo "Member.$_POST['username'].has been updated";
+    echo "Member".$_POST['username']."has been updated";
   }
 ?>
 
