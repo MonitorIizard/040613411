@@ -17,21 +17,21 @@
       <label for="name">
         name
       </label>
-      <input type="text" name="name" id="name"  class="border-2" value="Mok Maard">
+      <input type="text" name="name" id="name"  class="border-2"">
     </div>
 
     <div class="flex items-center gap-2">
       <label for="username">
         username
       </label>
-      <input type="text" name="username" id="username"  class="border-2" value="Mok">
+      <input type="text" name="username" id="username"  class="border-2">
     </div>
 
     <div class="flex items-center gap-2">
       <label for="password">
         passsword
       </label>
-      <input type="password" name="password" id="password"  class="border-2" value="123">
+      <input type="password" name="password" id="password"  class="border-2">
     </div>
 
     <div class="col-span-2 gap-2">
@@ -39,7 +39,6 @@
         address
       </label>
       <textarea name="address" id="address" class="border-2 w-full">
-        24/198
       </textarea>
     </div>
 
@@ -47,14 +46,14 @@
       <label for="mobile">
         mobile
       </label>
-      <input type="tel" name="mobile"  class="border-2" value="0863102312">
+      <input type="tel" name="mobile"  class="border-2">
     </div>
 
 
     <div class="flex items-center gap-2">
       <label for="email
       ">email</label>
-      <input type="email" name="email"  class="border-2" value="mok@gmail.com">
+      <input type="email" name="email"  class="border-2">
     </div>
 
     
