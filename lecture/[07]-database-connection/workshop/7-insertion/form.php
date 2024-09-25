@@ -12,7 +12,7 @@
 <body class="p-4">
   <h1 class="text-4xl py-8 font-bold">Add Users</h1>
 
-  <form action="./insert.php" class="flex flex-col gap-4" method="post">
+  <form action="./insert.php" class="flex flex-col gap-4" method="post" enctype="multipart/form-data">
     <div class="flex flex-col ">
       <label for="name" class="font-bold">
         name:
