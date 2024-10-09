@@ -18,7 +18,14 @@
   }
 </script>
 
-<body class="p-4">
+<body class="p-0">
+  <nav class="w-full h-20 bg-blue-200 p-4">
+    <a href="./10-login/index.php">
+      <button class="p-2 bg-green-200 rounded-md">
+        login
+      </button>
+    </a>
+  </nav>
 
   <h1 class="text-4xl py-8">All User</h1>
 
