@@ -6,7 +6,10 @@
                         border: 1px solid black;}
         </style>
 
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+    rel="stylesheet"
+    href="/~cs6520159/meth-shop/output.css"
+  />
 </head>
 
 <script>

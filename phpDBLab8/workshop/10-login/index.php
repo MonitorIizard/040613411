@@ -1,5 +1,8 @@
 <html>
-   <script src="https://cdn.tailwindcss.com"></script>
+   <link
+    rel="stylesheet"
+    href="/~cs6520159/meth-shop/output.css"
+  />
 <body>
 <form action="./check-login.php" method="POST" class="flex flex-col w-1/2">
    <lable class="font-bold">
