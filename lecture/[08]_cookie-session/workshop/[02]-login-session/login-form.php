@@ -2,7 +2,7 @@
    <link rel="stylesheet" href="../index.css">
    <link
     rel="stylesheet"
-    href="/~cs6520159/meth-shop/output.css"
+    href="/~cs6520159/meth-shop/src/css/output.css"
   />
 <body>
 <form action="check-login.php" method="POST" class="flex flex-col w-1/2">

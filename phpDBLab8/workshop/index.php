@@ -8,7 +8,7 @@
 
     <link
     rel="stylesheet"
-    href="/~cs6520159/meth-shop/output.css"
+    href="/~cs6520159/meth-shop/src/css/output.css"
   />
 </head>
 

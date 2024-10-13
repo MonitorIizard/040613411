@@ -6,7 +6,7 @@
   <title>Fruit</title>
   <link
     rel="stylesheet"
-    href="/~cs6520159/meth-shop/output.css"
+    href="/~cs6520159/meth-shop/src/css/output.css"
   />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
