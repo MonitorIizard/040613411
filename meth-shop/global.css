@@ -1,0 +1,12 @@
+form {
+  border: 2px solid rgb(71 85 105);
+  border-radius: 0.375rem; 
+}
+
+a {
+  text-decoration: underline;
+}
+
+bg-blue-conf {
+  background-color: #146eb4;
+}
