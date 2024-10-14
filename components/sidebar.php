@@ -31,12 +31,12 @@
   />
 </head>
 
-<aside class="w-48 bg-[#232f3e] h-dvh overflow-y-auto p-4 flex-none text-white">
+<aside class="w-48 bg-[#232f3e] h-dvh overflow-y-auto p-4 flex-none  ">
 
   <?php 
     if ( !isset($_SESSION['username']) ) {
       echo '<a href="http://202.44.40.193/~cs6520159/meth-shop/pages/login.php">
-        <button class="uk-button bg-[#146eb4] hover:bg-blue-300
+        <button class="uk-button bg-primary-blue hover:bg-blue-300
                       w-full h-4 my-8
                       flex ">
                       <div class="w-full flex justify-between items-center px-2">
@@ -50,7 +50,7 @@
       </a>';
     }else {
       echo '<a href="http://202.44.40.193/~cs6520159/meth-shop/handle/logout.php">
-        <button class="uk-button bg-[#146eb4] hover:bg-blue-300
+        <button class="uk-button bg-primary-blue hover:bg-blue-300
                       w-full h-4 my-8
                       flex ">
                       <div class="w-full flex justify-between items-center px-2">

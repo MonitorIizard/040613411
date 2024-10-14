@@ -1,10 +1,6 @@
-<?php include "../../database-instance.php" ?>
+<?php include "/home/std/cs6520159/public_html/meth-shop/src/database-instance.php" ;
+  session_start();
 
-<!-- method: correct -->
- <!-- form-name: correct -->
-
-
-<?php 
   //  echo __FILE__;
   $stmt= $pdo->prepare("INSERT INTO member (username, password, name, address, mobile, email) VALUES (?, ?, ?, ?, ?, ?)");
    $stmt->bindParam(1, $_POST['username']);
@@ -59,7 +55,12 @@
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file) && $stmt->execute()) {
       // echo "The file ". htmlspecialchars( basename( $_FILES["fileToUpload"]["name"])). " has been uploaded.";
 
-      header("location: ".$_SERVER['HTTP_REFERER']."?username=".$_POST["username"]."&filter=true");
+      if ( $_POST['from'] == 'register' ) {
+        header("location: /~cs6520159/meth-shop/src/pages/index.php");
+        $_SESSION['username'] = $_POST['username'];
+        $_SESSION['role'] = $_POST['user'];
+      }
+      // header("location: ".$_SERVER['HTTP_REFERER']."?username=".$_POST["username"]."&filter=true");
       
     } else {
       echo "Sorry, there was an error uploading your file.";

@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="http://202.44.40.193/~cs6520159/meth-shop/src/global.css">
 </head> 
 
-<button class="uk-button bg-[#ff9900] hover:bg-orange-300" uk-toggle="target: #add">+ Add Member</button>
+<button class="uk-button  bg-primary-orange hover:bg-orange-300" uk-toggle="target: #add">+ Add Member</button>
 
 <div id="add" class="uk-flex-top" uk-modal>
   <div class="uk-modal-body uk-margin-auto-vertical uk-modal-dialog">
@@ -90,13 +90,13 @@
       </div>
 
 
-      <button class="uk-button bg-[#146eb4] hover:bg-blue-800  mt-4 w-full" type="submit">
+      <button class="uk-button bg-primary-blue hover:bg-blue-800  mt-4 w-full" type="submit">
         Add User
       </button>
 
     </form>
 
-    <button class="uk-button bg-[#f2f2f2] hover:bg-slate-300 mt-4 w-full uk-modal-close text-black">
+    <button class="uk-button  bg-primary-gray hover:bg-slate-300 mt-4 w-full uk-modal-close text-black">
       Cancel
     </button>
   </div>

@@ -1,4 +1,4 @@
-<?php include "../../database-instance.php" ?>
+<?php include "/home/std/cs6520159/public_html/meth-shop/src/database-instance.php" ?>
 
 <head>
   <link rel="stylesheet" href="https://unpkg.com/franken-ui@1.1.0/dist/css/core.min.css" />
@@ -23,7 +23,7 @@
         > Edit drug</button>
 
 <div id="<?=$row["pname"] ?>" class="uk-flex-top" uk-modal>
-  <div class="uk-modal-body uk-margin-auto-vertical uk-modal-dialog">
+  <div class="uk-modal-body uk-margin-auto-vertical uk-modal-dialog text-white">
     <button class="uk-modal-close-default" type="button" uk-close></button>
 
     <form class="border-none overflow-y-auto h-75dvh" 
@@ -80,7 +80,7 @@
 
     </form>
 
-    <button class="uk-button bg-[#f2f2f2] hover:bg-slate-300 mt-4 w-full uk-modal-close text-black">
+    <button class="uk-button  bg-primary-gray hover:bg-slate-300 mt-4 w-full uk-modal-close text-black">
       Cancel
     </button>
   </div>

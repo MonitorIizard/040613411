@@ -32,16 +32,15 @@
 
 </head>
 
-<body class="text-white bg-black flex">
-
+<body class="    flex">
 
   <div>
-    <?php include "../components/sidebar.php"; ?>
+    <?php include "/home/std/cs6520159/public_html/meth-shop/src/components/sidebar.php"; ?>
   </div>
 
   <content class="p-4 h-dvh grow overflow-y-auto">
     <div class="flex justify-between">
-      <h1 class="text-4xl font-bold py-4"><span class="text-[#146eb4]">My Orders</h1>
+      <h1 class="text-4xl font-bold py-4"><span class="text-primary-blue">My Orders</h1>
       <div class="uk-margin">
 
         <div class="flex gap-4">

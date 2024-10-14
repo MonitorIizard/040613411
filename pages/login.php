@@ -31,9 +31,9 @@
   />
 </head>
 
-<body class="bg-black text-white flex items-center justify-center h-dvh">
+<body class="    flex items-center justify-center h-dvh">
 
-  <form class="uk-form-hotizontal bg-[#146eb4]
+  <form class="uk-form-hotizontal bg-primary-blue
                w-96 p-4
                my-auto mx-auto" 
                action="http://202.44.40.193/~cs6520159/meth-shop/handle/login.php"
@@ -72,7 +72,7 @@
       </div>
     </div>
 
-    <button class="uk-button bg-[#ff9900] hover:bg-orange-300 mb-4" type="submit">
+    <button class="uk-button  bg-primary-orange hover:bg-orange-300 mb-4" type="submit">
       login
     </button>
 

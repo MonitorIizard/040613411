@@ -23,7 +23,7 @@
   />
   <link
     rel="stylesheet"
-    href="http://202.44.40.193/~cs6520159/meth-shop/src/global.css"
+    href="/~cs6520159/meth-shop/src/global.css"
   />
 
   <link
@@ -32,16 +32,17 @@
   />
 </head>
 
-<body class="bg-black text-white flex items-center justify-center h-dvh">
+<body class="bg-white   flex items-center justify-center h-dvh">
 
-  <form class="uk-form-hotizontal bg-[#146eb4]
+  <form class="uk-form-hotizontal bg-primary-blue
                w-96 p-4
-               my-auto mx-auto" 
-               action="http://202.44.40.193/~cs6520159/meth-shop/handle/login.php"
+               my-auto mx-auto
+               shadow-lg" 
+               action="/~cs6520159/meth-shop/src/handle/login.php"
                method="post">
     <h1 class="text-2xl font-bold flex justify-center">Login</h1>
 
-    <img src="http://202.44.40.193/~cs6520159/meth-shop/assets/svgs/gas-mask.svg"
+    <img src="/~cs6520159/meth-shop/src/assets/svgs/gas-mask.svg"
                           width="100"
                           height=""
                           uk-svg 
@@ -66,20 +67,20 @@
         <input
           class="uk-input"
           id="form-stacked-text"
-          type="text"
+          type="password"
           placeholder=""
           name="password"
         />
       </div>
     </div>
 
-    <button class="uk-button bg-[#ff9900] hover:bg-orange-300 mb-4" type="submit">
+    <button class="uk-button  bg-primary-orange hover:bg-orange-300 mb-4" type="submit">
       login
     </button>
 
     <br>
 
-    <a href="" class="uk-link">
+    <a href="/~cs6520159/meth-shop/src/pages/register.php" class="uk-link">
       new account
     </a>
 

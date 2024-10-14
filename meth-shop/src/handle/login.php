@@ -9,10 +9,16 @@
 
   $row = $stmt->fetch();
 
+  $role = $row["role"];
+  $_SESSION['role'] = $role;
+  $_SESSION['username'] = $row["username"];
+
   if ( !empty($row)) {
-    $_SESSION['username']=$row["username"];
-    setcookie("login_status", 1, time(), '/');
-    header("location: /~cs6520159/meth-shop/pages/my-orders.php");
+    if ( $role == 'admin') {
+      header("location: /~cs6520159/meth-shop/src/pages/admin/index.php");
+    } else {
+      header("location: /~cs6520159/meth-shop/src/pages/index.php");
+    }
   } else {
     setcookie("login_status", 0, time() + 20, '/');
     header("location: ".$_SERVER["HTTP_REFERER"]);

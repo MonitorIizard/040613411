@@ -1,4 +1,4 @@
-<?php include "../../database-instance.php" ?>
+<?php include "/home/std/cs6520159/public_html/meth-shop/src/database-instance.php" ?>
 
 <head>
   <link rel="stylesheet" href="https://unpkg.com/franken-ui@1.1.0/dist/css/core.min.css" />
@@ -26,7 +26,7 @@
       $stmt->execute();
       while ($row = $stmt->fetch()) {
 ?>
-        <div class="uk-card w-60 h-[450px]  p-4 bg-[#146eb4] text-sm relative">
+        <div class="uk-card w-60 h-102  p-4 bg-primary-blue text-sm relative">
           
           <a href="<?= $_SERVER['PHP_SELF']."?username=".$row["username"]?>&filter=true">
             <img src="http://202.44.40.193/~cs6520159/meth-shop/assets/member_photo/<?=$row["username"]?>" class="mx-auto py-4 w-40 h-48 object-scale-down"/>
@@ -57,7 +57,7 @@
 <?php } ?>
 
 <div id="modal-center" class="uk-flex-top" uk-modal>
-          <div class="uk-modal-body uk-margin-auto-vertical uk-modal-dialog">
+          <div class="text-white uk-modal-body uk-margin-auto-vertical uk-modal-dialog">
             <button class="uk-modal-close-default" type="button" uk-close></button>
 
             <p class="text-center">
@@ -71,7 +71,7 @@
                   Confirm Delete
                 </button>
             </a>
-                <button class="uk-button bg-[#f2f2f2] hover:bg-slate-300 mt-4 w-full uk-modal-close text-black"> 
+                <button class="uk-button  bg-primary-gray hover:bg-slate-300 mt-4 w-full uk-modal-close text-black"> 
                   Cancel
                 </button>
           </div>

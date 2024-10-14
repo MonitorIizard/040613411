@@ -1,5 +1,5 @@
 <?php
-  include "../../database-instance.php";
+  include "/home/std/cs6520159/public_html/meth-shop/src/database-instance.php";
   
   session_start();
 
